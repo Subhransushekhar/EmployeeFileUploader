@@ -34,22 +34,6 @@ class EmployeeDataApplicationTests {
 	@MockBean
 	EmployeeService empService;
 	
-	@Test
-	public void testUploadMultiPart() throws Exception {
-		
-		MockMultipartFile file 
-	      = new MockMultipartFile(
-	        "file", 
-	        "employee.csv", 
-	        MediaType.TEXT_PLAIN_VALUE, 
-	        "Ram 22".getBytes()
-	      );
-		
-		MockMvc mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
-		 mockMvc.perform(
-				multipart("/api/v1/upload/local").file(file)).andExpect(status().isOk());
-						
-	}
 	
 	@Test
 	public void testDeleteApi() throws Exception {
