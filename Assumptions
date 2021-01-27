@@ -1,0 +1,37 @@
+Assumptions:
+1. There can be employees with same name 
+2. CURD operations can be done only on the id
+3. I have used an in-memory database(H2)
+	Hence everytime you restart the app the DB url will change and that can be retireved from the application start-up logs
+4. 	
+
+
+
+APIs:
+-----
+CURD Operations:
+--------------
+GET : /api/v1/employeeInfo/{id} - gets the employee information for specific Id
+GET : /api/v1/employeeInfo - gets all emp information
+DELETE : /api/v1/delete/{id} - Deletes specific emp with the given ID
+POST : /api/v1/update - 
+		Request Param :
+			name
+			Age
+
+
+UPLOAD Operations
+--------------
+POST : /api/v1/upload/local - Uploads file to a local path in the server
+POSt : /api/v1/upload/db - Uploads file context to a in memory Database
+GET : /api/v1//getUploadStatus/{fileName} - Get the status of the uploaded file
+		
+		
+building containerization:
+---------------
+upload
+build : docker build -f Dockerfile -t employee-data .
+list images : docker image
+run : docker run -p 8090:8090 employee-data
+
+

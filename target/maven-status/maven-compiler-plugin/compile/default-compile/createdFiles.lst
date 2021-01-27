@@ -1,0 +1,11 @@
+com\vmware\employeeDataManagement\model\FileInfo.class
+com\vmware\employeeDataManagement\service\EmployeeService.class
+com\vmware\employeeDataManagement\serviceImpl\EmployeeServiceImpl.class
+com\vmware\employeeDataManagement\controller\EmployeeController.class
+com\vmware\employeeDataManagement\serviceImpl\FileUploadServiceImpl.class
+com\vmware\employeeDataManagement\service\FileUploadService.class
+com\vmware\employeeDataManagement\controller\FileUploadController.class
+com\vmware\employeeDataManagement\EmployeeDataApplication.class
+com\vmware\employeeDataManagement\model\Employee.class
+com\vmware\employeeDataManagement\repository\EmployeeDataRepo.class
+com\vmware\employeeDataManagement\repository\FileInfoRepo.class
