@@ -97,8 +97,8 @@ public class FileUploadServiceImpl implements FileUploadService {
 	}
 
 	@Override
-	public String getUploadStatus( String fileName) {
-		Optional<FileInfo> fileInfo = fileInfoRepo.findById(fileName);
+	public String getUploadStatus( int id) {
+		Optional<FileInfo> fileInfo = fileInfoRepo.findById(id);
 		if(fileInfo.isEmpty()) {
 			return "File Not Found";
 		}else

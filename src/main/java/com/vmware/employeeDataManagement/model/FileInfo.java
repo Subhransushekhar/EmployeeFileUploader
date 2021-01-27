@@ -10,10 +10,9 @@ import javax.persistence.Id;
 @Table(name = "FileInfo")
 public class FileInfo {
 
-	
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int Id;
-	@Id
 	private String fileName;
 	private String fileType;
 	private String status;

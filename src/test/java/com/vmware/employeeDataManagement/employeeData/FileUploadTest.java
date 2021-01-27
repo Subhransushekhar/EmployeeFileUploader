@@ -103,7 +103,7 @@ public class FileUploadTest {
 	public void testgetUploadStatus() throws Exception {
 		MockMvc mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
 		mockMvc.perform(MockMvcRequestBuilders
-				.get("/api/v1//getUploadStatus/Employee.csv"))
+				.get("/api/v1//getUploadStatus/1"))
 				.andExpect(status().isOk());
 	}
 	

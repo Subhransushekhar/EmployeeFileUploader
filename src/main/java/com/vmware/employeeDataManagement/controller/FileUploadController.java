@@ -50,9 +50,9 @@ FileUploadService fileUploadService;
 		return "Upload In progress. Please access getUploadStatus to tack the status";
 	}
 	
-	@GetMapping("/getUploadStatus/{fileName}")
-	public String getUploadStatus(@PathVariable String fileName) {
-		return fileUploadService.getUploadStatus(fileName);
+	@GetMapping("/getUploadStatus/{id}")
+	public String getUploadStatus(@PathVariable int id) {
+		return fileUploadService.getUploadStatus(id);
 		
 	}
 	
